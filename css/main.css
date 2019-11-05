@@ -144,6 +144,7 @@ nav .logo {
     height: 90vh;
     top: 10vh;
     background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
