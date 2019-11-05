@@ -4,18 +4,23 @@ body {
   height: 100vh;
   background-color: black;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+.header {
+  position: relative;
+}
+
 .header-img {
   position: absolute;
   height: 110vh;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   z-index: -2;
 }
 .header-cover {
   position: absolute;
   height: 110vh;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   opacity: 0.6;
   z-index: -1;
@@ -124,7 +129,7 @@ nav .logo {
 /** ======================================================*/
 
 @media (max-width: 850px) {
-  body {
+  .header {
     overflow-x: hidden;
   }
   .nav-links {
@@ -145,7 +150,7 @@ nav .logo {
 }
 
 @media (max-width: 550px) {
-  body {
+  .header {
     overflow-x: hidden;
   }
   .header-img {
@@ -189,7 +194,7 @@ nav .logo {
 }
 
 @media (max-width: 320px) {
-  body {
+  .header {
     overflow-x: hidden;
   }
   .header-img {
@@ -218,6 +223,10 @@ nav .logo {
   .nav-links li {
     opacity: 0;
   }
+
+  .nav-links a {
+    font-size: 0.5rem;
+  }
   .hero-text-h2 {
     font-size: 1rem;
   }
@@ -227,7 +236,7 @@ nav .logo {
   }
 
   .hero-text-number {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
