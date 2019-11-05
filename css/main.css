@@ -133,7 +133,9 @@ nav .logo {
   body {
     overflow-x: hidden;
   }
-
+  .header-img {
+    object-position: center;
+  }
   nav {
     background-color: black;
   }
