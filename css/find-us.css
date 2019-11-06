@@ -71,8 +71,13 @@ nav .logo {
   letter-spacing: 2px;
 }
 
+.active {
+  color: gold !important;
+  border-bottom: gold solid 2px;
+}
 .nav-links a:hover {
   color: gold;
+  border-bottom: gold solid 2px;
 }
 
 .nav-links li {
@@ -129,6 +134,7 @@ nav .logo {
 .contact-info {
   color: white;
   width: 100%;
+  margin: 2em 0;
 }
 .contact-info h4 {
   margin-bottom: 1em;
@@ -156,6 +162,13 @@ nav .logo {
 .contact-form {
   color: white;
   width: 100%;
+  margin: 2em 0;
+}
+
+.contact-form-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
 }
 
 /** ======================================================*/
@@ -217,6 +230,15 @@ nav .logo {
 
   .hero-text-h1 {
     font-size: 3rem;
+  }
+
+  .contact-info {
+    border-bottom: white solid 2px;
+    padding-bottom: 1em;
+  }
+
+  .contact-form {
+    margin: 0 0 2em 0;
   }
 }
 

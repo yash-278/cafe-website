@@ -71,8 +71,14 @@ nav .logo {
   letter-spacing: 2px;
 }
 
+.active {
+  color: gold !important;
+  border-bottom: gold solid 2px;
+}
+
 .nav-links a:hover {
   color: gold;
+  border-bottom: gold solid 2px;
 }
 
 .nav-links li {
