@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Reviews</title>
+    <title>Menu</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,10 +15,18 @@
       href="https://fonts.googleapis.com/css?family=McLaren|Montserrat|Permanent+Marker|Titillium+Web:400,700,800,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <div class="header">
+      <div>
+        <img
+          src="images/header-img.jpg"
+          alt="Header Image"
+          class="header-img"
+        />
+      </div>
+      <div class="header-cover"></div>
       <nav class="nav-bar">
         <div>
           <img src="images/logo.jpeg" alt="" class="logo" />
@@ -28,10 +36,10 @@
             <a href="index.html">HOME</a>
           </li>
           <li>
-            <a href="menu.html">MENU</a>
+            <a href="menu.html" class="active">MENU</a>
           </li>
           <li>
-            <a href="reviews.html" class="active">REVIEWS</a>
+            <a href="reviews.html">REVIEWS</a>
           </li>
           <li>
             <a href="find-us.html">FIND US</a>
@@ -43,30 +51,10 @@
           <div class="line3"></div>
         </div>
       </nav>
-      <!-- Contact form section -->
-      <div class="contact-section">
-        <h1>Contact Me</h1>
-        <div class="border"></div>
-        <form
-          class="contact-form"
-          action="mailto:bombayshawarma@gmail.com?Subject=My%20Reviews"
-          method="post"
-          target="_blank"
-          enctype="text/plain"
-        >
-          <input
-            type="text"
-            class="contact-form-text"
-            placeholder="Your name"
-            name="Name  "
-          />
-          <textarea
-            class="contact-form-text"
-            placeholder="Your message"
-            name="Message   "
-          ></textarea>
-          <input type="submit" class="contact-form-btn" value="Send" />
-        </form>
+      <div class="hero-text-container">
+        <div>
+          <h1 class="hero-text-h1">Menu</h1>
+        </div>
       </div>
     </div>
 
