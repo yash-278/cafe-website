@@ -58,8 +58,11 @@ nav {
   height: 13vh;
 }
 
-nav .logo {
+.logo-container {
+}
+.logo {
   height: 10vh;
+
   object-fit: cover;
 }
 
