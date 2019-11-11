@@ -68,11 +68,42 @@
             <p>Below Gurkul School</p>
             <p>100 Feet Rd</p>
             <p>Sangli - 416416</p>
-            <a
+            <!-- <a
               href="https://www.google.com/maps/search/?api=1&query=Thote%20Heights,Sangli&query_place_id=ChIJz8nUh6cZwTsR3wVYRYbA1u8"
-            >
-              <button class="btn btn-warning btn-lg">Get Directions</button>
-            </a>
+            > -->
+            <button class="btn btn-warning btn-lg" onclick="mapsSelector()">
+              Get Directions
+            </button>
+            <!-- </a> -->
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="300"
+                  height="300"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Thote%20Heights%20%2C%20Sangli%20%2CMaharashtra&t=&z=19&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+              </div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 300px;
+                  width: 300px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 300px;
+                  width: 300px;
+                }
+              </style>
+            </div>
+            <br />
             <p>📞 - 8169574485 , 9769008431</p>
             <p>Mon - Sun</p>
             <p>12:00 PM to 11:59 PM</p>
@@ -81,7 +112,7 @@
           <div class="col-md col-lg-5 contact-form">
             <h4>CONTACT US</h4>
             <form
-              action="mailto:bombayshawarma@gmail.com.com"
+              action="mailto:bombayshawarma@gmail.com"
               method="post"
               enctype="text/plain"
             >
