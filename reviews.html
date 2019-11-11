@@ -45,13 +45,12 @@
       </nav>
       <!-- Contact form section -->
       <div class="contact-section">
-        <h1>Contact Me</h1>
+        <h1>Feedback</h1>
         <div class="border"></div>
         <form
           class="contact-form"
-          action="mailto:bombayshawarma@gmail.com?Subject=My%20Reviews"
-          method="post"
-          target="_blank"
+          action="mailto:bombayshawarma@gmail.com"
+          method="get"
           enctype="text/plain"
         >
           <input
@@ -65,7 +64,12 @@
             placeholder="Your message"
             name="Message   "
           ></textarea>
-          <input type="submit" class="contact-form-btn" value="Send" />
+          <input
+            type="submit"
+            name="submit"
+            class="contact-form-btn"
+            value="Send"
+          />
         </form>
       </div>
     </div>
