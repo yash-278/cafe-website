@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background-color: black;
   box-sizing: border-box;
+  color: white;
 }
 
 a:focus {
@@ -131,6 +132,48 @@ nav {
 /** ======================================================*/
 /** ============        Menu                ==============*/
 /** ======================================================*/
+.menu-card {
+  margin-top: 1em;
+  border: 2px solid white;
+  padding: 1em;
+}
+
+.menu-card h2 {
+  text-align: center;
+  /* border-bottom: 1px solid white; */
+  margin-bottom: 0.5em;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.dish-name-head {
+  width: 300px;
+  border-bottom: 1px solid white;
+}
+.dish-half-head {
+  width: 200px;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.dish-full-head {
+  width: 200px;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.dish-name {
+  width: 300px;
+}
+.dish-half {
+  width: 200px;
+  text-align: center;
+}
+.dish-full {
+  width: 200px;
+  text-align: center;
+}
 
 /** ======================================================*/
 /** ============        Media Queries       ==============*/
