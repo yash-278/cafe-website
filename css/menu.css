@@ -49,6 +49,7 @@ a:focus {
   margin: 0;
   padding: 0;
   height: 100vh;
+  z-index: 0;
 }
 
 nav {
@@ -106,6 +107,7 @@ nav {
   height: 3px;
   background-color: white;
   margin: 5px;
+  transition: all 0.5s ease;
 }
 
 /** ======================================================*/
@@ -132,10 +134,13 @@ nav {
 /** ======================================================*/
 /** ============        Menu                ==============*/
 /** ======================================================*/
+
 .menu-card {
   margin-top: 1em;
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 1em;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
 }
 
 .menu-card h2 {
@@ -208,15 +213,16 @@ table {
     right: 0px;
     height: 90vh;
     top: 10vh;
-    background-color: black;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 60%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in;
   }
 
   .nav-links li {
@@ -254,4 +260,14 @@ table {
 
     transform: translateX(0);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
