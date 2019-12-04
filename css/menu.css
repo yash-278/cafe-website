@@ -135,6 +135,20 @@ nav {
 /** ============        Menu                ==============*/
 /** ======================================================*/
 
+.card-header {
+  text-align: center;
+}
+
+.menu-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 3rem !important;
+  letter-spacing: 5px !important;
+}
+
+.card {
+  background-color: black !important;
+}
+
 .menu-card {
   margin-top: 1em;
   border: 1px solid white;
@@ -150,6 +164,7 @@ nav {
 }
 
 table {
+  width: 100%;
   border-collapse: separate;
   border-spacing: 0 10px;
 }

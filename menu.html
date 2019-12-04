@@ -58,7 +58,7 @@
       </div>
 
       <div class="container">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-6">
             <div class="menu-card">
               <h2>Snacks</h2>
@@ -126,9 +126,155 @@
             </div>
           </div>
         </div>
+       -->
+
+        <!-- ?============================Accordion  -->
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h1 class="mb-0 menu-title">
+                <button
+                  class="btn btn-dark btn-block"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                >
+                  Snacks
+                </button>
+              </h1>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="menu-card">
+                  <table>
+                    <tr>
+                      <th class="dish-name-head">Name</th>
+                      <th class="dish-half-head">Half</th>
+                      <th class="dish-full-head">Full</th>
+                    </tr>
+                    <tr>
+                      <th class="dish-name">Maggi</th>
+                      <th class="dish-half">20</th>
+                      <th class="dish-full">50</th>
+                    </tr>
+                    <tr>
+                      <th class="dish-name">Idli-Sambhar</th>
+                      <th class="dish-half">60</th>
+                      <th class="dish-full">100</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h1 class="mb-0 menu-title">
+                <button
+                  class="btn collapsed btn-dark btn-block"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                >
+                  Starters
+                </button>
+              </h1>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="menu-card">
+                  
+                  <table>
+                    <tr>
+                      <th class="dish-name-head">Name</th>
+                      <th class="dish-half-head">Half</th>
+                      <th class="dish-full-head">Full</th>
+                    </tr>
+                    <tr>
+                      <th class="dish-name">Maggi</th>
+                      <th class="dish-half">20</th>
+                      <th class="dish-full">50</th>
+                    </tr>
+                    <tr>
+                      <th class="dish-name">Idli-Sambhar</th>
+                      <th class="dish-half">60</th>
+                      <th class="dish-full">100</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h1 class="mb-0 menu-title">
+                <button
+                  class="btn collapsed btn-dark btn-block"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                >
+                  Main Course
+                </button>
+              </h1>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="menu-card">
+                  <table>
+                    <tr>
+                      <th class="dish-name-head">Name</th>
+                      <th class="dish-half-head">Half</th>
+                      <th class="dish-full-head">Full</th>
+                    </tr>
+                    <tr>
+                      <th class="dish-name">Maggi</th>
+                      <th class="dish-half">20</th>
+                      <th class="dish-full">50</th>
+                    </tr>
+                    <tr>
+                      <th class="dish-name">Idli-Sambhar</th>
+                      <th class="dish-half">60</th>
+                      <th class="dish-full">100</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/app.js"></script>
   </body>
 </html>
