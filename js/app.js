@@ -23,4 +23,23 @@ const navSlide = () => {
   });
 };
 
+const activeButton = () => {
+  const menuButton1 = document.querySelector(".menuButton1");
+  const menuButton2 = document.querySelector(".menuButton2");
+  const menuButton3 = document.querySelector(".menuButton3");
+
+  menuButton1.addEventListener("click", () => {
+    menuButton1.classList.toggle("btn-dark");
+  });
+
+  menuButton2.addEventListener("click", () => {
+    menuButton2.classList.toggle("btn-dark");
+  });
+
+  menuButton3.addEventListener("click", () => {
+    menuButton3.classList.toggle("btn-dark");
+  });
+};
+
 navSlide();
+activeButton();
