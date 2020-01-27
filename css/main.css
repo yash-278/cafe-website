@@ -319,24 +319,7 @@ nav .logo {
   }
 }
 
-/* ?=============   Xtra Small Screens    =================== */
-
-@media (max-width: 320px) {
-  .nav-links a {
-    font-size: 0.5rem;
-  }
-  .hero-text-h2 {
-    font-size: 1rem;
-  }
-
-  .hero-text-h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-text-number {
-    font-size: 1rem;
-  }
-}
+ 
 
 /** ======================================================*/
 /** ===========    Toggle-able Classes      ==============*/

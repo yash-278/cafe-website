@@ -60,8 +60,6 @@ nav {
   height: 13vh;
 }
 
-.logo-container {
-}
 .logo {
   height: 10vh;
   object-fit: cover;
@@ -253,7 +251,7 @@ table {
 
 @media (max-width: 320px) {
   .nav-links a {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 /** ======================================================*/
