@@ -18,6 +18,16 @@
     <link rel="stylesheet" href="css/reviews.css" />
   </head>
   <body>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display:none;"
+      onload="if(submitted) {window.location='success.html';}"
+    ></iframe>
+
     <div class="header">
       <nav class="nav-bar">
         <div>
@@ -49,28 +59,40 @@
         <div class="border"></div>
         <form
           class="contact-form"
-          enctype="text/plain"
-          method="post"
           action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeeZ3TzZUE0qFBD21VZOaEDhUPKC-bg7eS3slm-CjyGdZy4-Q/formResponse"
+          method="post"
+          target="hidden_iframe"
+          onsubmit="return validateForm();"
         >
           <input
+            id="name"
             type="text"
             class="contact-form-text"
             placeholder="Your name"
             name="entry.408846215"
           />
+          <input
+            id="email"
+            type="text"
+            class="contact-form-text"
+            placeholder="Your email"
+            name="entry.136851023"
+          />
           <textarea
+            id="message"
             type="text"
             class="contact-form-text"
             placeholder="Your message"
             name="entry.711324546"
           ></textarea>
-          <!-- <input type="submit" class="contact-form-btn" /> -->
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <!-- <input type="submit" class="contact-form-btn"/> -->
+          <button class="btn btn-primary btn-lg" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>
-
+    <script src="js/form.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
