@@ -69,9 +69,7 @@
             <p>Below Gurkul School</p>
             <p>100 Feet Rd</p>
             <p>Sangli - 416416</p>
-            <a
-              href="https://maps.google.com/?q=place_id:ChIJA-yJXxUZwTsRC4HbnSOEKqg"
-            >
+            <a href="https://g.page/bombay-shawarma?share">
               <button class="btn btn-warning btn-lg">
                 Get Directions
               </button>
@@ -125,19 +123,30 @@ http://www.website.com/info/info.pdf"
           </div>
           <div class="col-md col-lg-5 contact-form">
             <h4>CONTACT US</h4>
+
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
+            <iframe
+              name="hidden_iframe"
+              id="hidden_iframe"
+              style="display:none;"
+              onload="if(submitted) {window.location='success.html';}"
+            ></iframe>
             <form
-              action="mailto:bombayshawarma@gmail.com"
+              action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSczjTDpXvbzeZmJvnfzvHwLcb8MJtwuhooZscjn-JzYK-po3g/formResponse"
               method="post"
-              enctype="text/plain"
+              target="hidden_iframe"
+              onsubmit="return validateForm();"
             >
               <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="name"
                   placeholder="Your Name"
-                  name="Name   "
+                  name="entry.702066222"
                 />
               </div>
               <div class="form-group">
@@ -145,9 +154,9 @@ http://www.website.com/info/info.pdf"
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="number"
                   placeholder="Enter Phone Number"
-                  name="Phone Number   "
+                  name="entry.40619782"
                 />
               </div>
               <div class="form-group">
@@ -155,9 +164,9 @@ http://www.website.com/info/info.pdf"
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="email"
                   placeholder="Enter email"
-                  name="Email  "
+                  name="entry.117887222"
                 />
                 <small id="emailHelp" class="form-text text-muted">
                   We'll never share your email with anyone else.
@@ -169,8 +178,9 @@ http://www.website.com/info/info.pdf"
                   type="text"
                   class="form-control"
                   rows="3"
+                  id="message"
                   placeholder="Your Message"
-                  name="Message  "
+                  name="entry.2002270928"
                 ></textarea>
               </div>
               <input type="submit" class="contact-form-btn" value="Send" />
@@ -180,6 +190,7 @@ http://www.website.com/info/info.pdf"
       </div>
     </div>
 
+    <script src="js/form.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
